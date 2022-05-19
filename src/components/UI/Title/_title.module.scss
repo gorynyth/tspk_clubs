@@ -1,0 +1,17 @@
+@import "src/assets/style/mixins";
+.title {
+
+  @include text700($size: 24px, $color: var(--text));
+  margin-bottom: 16px;
+
+  &::before {
+    content: '/ ';
+    color: var(--mega-red);
+  }
+
+  &::after {
+    content: ' __';
+    color: var(--mega-red);
+  }
+
+}
